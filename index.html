@@ -44,6 +44,22 @@
         <p> </p>One of the biggest advantages of online shopping is that the buyer does not have to wait for the parking or stand in ques. He can simply place an order online and pay for the things. The entire process of selecting, buying, and paying can be done through the medium of online websites only.
 
             </div>
+    
+<script>
+    document.querySelectorAll('a[href^="#]').forEach(anchor=>{
+        anchor.addEventListener('click',function(e){
+            e.preventDefault();
+            const targetId=this.getAttribute('href').substring(1);
+            const targetElement=document.getElementById(targetId);
+            if(targetElement){
+                window.scrollTo({
+                    top:targetElement.offsetTop,
+                    behavoiur:'smooth'
+                });
+            }
+        });
+    });
+</script> 
             </div>
     </div>
     </body>
